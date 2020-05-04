@@ -1,0 +1,13 @@
+html, body {
+    background-color: red;
+}
+
+#animelist {
+    list-style:none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul li {
+    display: inline-block;
+}
