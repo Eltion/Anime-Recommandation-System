@@ -1,3 +1,8 @@
+body {
+    background-color:black;
+    color:white;
+}
+
 #main {
     max-width: 1080px;
     margin: auto;   
@@ -33,3 +38,38 @@ ul li {
     width: 250px;
 }
 
+#search{
+    padding: 10px;
+    background:none;
+    border-radius: 50px;
+    border: 0.5px solid white;
+    width:40%;
+    color:white;
+
+}
+
+#search:focus{
+    outline: none;
+}
+
+#searchMethod:focus{
+    outline: none;
+}
+
+#rec{
+    margin-left: -30px;
+    cursor: pointer;
+    
+}
+
+#searchMethod{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.searchField{
+    margin-top: 20px;
+    text-align: center;
+}

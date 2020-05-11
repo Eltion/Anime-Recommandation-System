@@ -13,22 +13,32 @@ function main() {
 
 
     $("#rec").on("click", function(){
-        $('#animelist').empty();
-        search2($("#search").val());
+        SearchMethod()
     });
     
 
     $("#search").keypress(function (e){
         if(e.keyCode == 13){
-            $('#animelist').empty();
-            search2($("#search").val());
+           SearchMethod()
         }
     });
-
 
 //    getRecByAnime( "Naruto",function (data){
 //        addToList(data)
 //    })
+}
+
+function SearchMethod(){
+    $('#animelist').empty()
+    var key = $("#search").val()
+    var method = $("#searchMethod").val()
+    if(method == 'watchNext'){
+        search(key)
+    }else if(method == 'Similar'){
+        search2(key)
+    }else if(method == 'userPreference'){
+        search1(key)
+    }
 }
 
 function search(key){

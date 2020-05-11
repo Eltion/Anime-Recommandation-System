@@ -5,11 +5,18 @@
         <link rel="stylesheet" href="main.css">
         <script src="main.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <div>
+        
+        <div class="searchField">
+            <select id="searchMethod">
+                <option value="watchNext" selected>Watch Next</option>
+                <option value="Similar">Similar Anime</option>
+                <option value="userPreference">User Preference</option>
+            </select>
             <input type="text" id="search" placeholder="Search">
-            <input type="submit" value="GO" id="rec">
+            <i class="fa fa-search" id="rec"></i>
         </div>
 
         <div id="main">
