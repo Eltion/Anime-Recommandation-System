@@ -1,13 +1,35 @@
-html, body {
-    background-color: red;
+#main {
+    max-width: 1080px;
+    margin: auto;   
 }
 
 #animelist {
     list-style:none;
     padding: 0px;
-    margin: 0px;
+    margin-top: 20px;
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 ul li {
-    display: inline-block;
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    height: 400px;
+    max-height: 386px;
 }
+
+.item {
+    text-align: center;
+    max-width: 250px;
+}
+
+.item img {
+    height: 350px;
+    width: 250px;
+}
+
